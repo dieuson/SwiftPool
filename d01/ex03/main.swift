@@ -14,6 +14,7 @@ print("First mix: \(test0)");
 test0.mix();
 print("Second mix: \(test0)");
 print("\n");
+print("Try with some nil elements in array")
 var testWithNil = [0,1,2,nil,4,5,6,7,nil,9];
 print(testWithNil);
 testWithNil.mix();
@@ -22,6 +23,7 @@ testWithNil.mix();
 print(testWithNil);
 print("\n");
 
+print("Try with empty array")
 var test: [Int] = [];
 print(test);
 test.mix();
@@ -30,6 +32,7 @@ test.mix();
 print(test);
 print("\n");
 
+print("Try with nil element in array")
 var test1 = [nil] as [Any?];
 print(test1);
 test1.mix();

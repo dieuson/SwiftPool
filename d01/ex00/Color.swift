@@ -8,9 +8,9 @@
 import Foundation
 
 enum Color :String {
-    case Clovers = "Clovers"
-    case Tiles = "Tiles"
-    case Hearts = "Hearts"
-    case Pikes = "Pikes"
-    static let allColors :[Color] = [Color.Clovers, Color.Tiles, Color.Hearts, Color.Pikes]
+    case Spade = "Spade"
+    case Diamond = "Diamond"
+    case Heart = "Heart"
+    case Club = "Club"
+    static let allColors :[Color] = [Color.Spade, Color.Diamond, Color.Heart, Color.Club]
 }

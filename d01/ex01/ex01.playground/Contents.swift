@@ -3,19 +3,19 @@
 
 import UIKit
 
-enum Value :Int {
-    case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,  Jack, Queen, King, As
-    static let allValues :[Value] = [Value.Two, Value.Three, Value.Four, Value.Five,
+public enum Value :Int {
+    case Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,  Jack, Queen, King
+    static let allValues :[Value] = [Value.Ace, Value.Two, Value.Three, Value.Four, Value.Five,
                                      Value.Six, Value.Seven, Value.Eight, Value.Nine,
-                                     Value.Ten, Value.Jack, Value.Queen, Value.King, Value.As]
+                                     Value.Ten, Value.Jack, Value.Queen, Value.King]
 }
 
 enum Color :String {
-    case Clovers = "Clovers"
-    case Tiles = "Tiles"
-    case Hearts = "Hearts"
-    case Pikes = "Pikes"
-    static let allColors :[Color] = [Color.Clovers, Color.Tiles, Color.Hearts, Color.Pikes]
+    case Spade = "Spade"
+    case Diamond = "Diamond"
+    case Heart = "Heart"
+    case Club = "Club"
+    static let allColors :[Color] = [Color.Spade, Color.Diamond, Color.Heart, Color.Club]
 }
 
 class Card: NSObject {
@@ -44,5 +44,17 @@ class Card: NSObject {
 
 var card1 = Card(color: Color.Pikes, value: Value.Eight);
 var card2 = Card(color: Color.Pikes, value: Value.Nine);
-print(card1 == card2)
+var card3 = Card(color: Color.Pikes, value: Value.Eight);
+var card4 = card2;
+
+
+card1.isEqual(card2);
+card2.isEqual(card3);
+card3.isEqual(card4);
+card2.isEqual(card4);
+card1.isEqual(card4);
+card2.isEqual(card2);
+
+//print(card3 == card2);
+
 

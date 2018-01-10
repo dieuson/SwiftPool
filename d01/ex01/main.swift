@@ -7,23 +7,25 @@
 
 import Foundation
 
-enum Value :Int {
-    case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,  Jack, Queen, King, As
-    static let allValues :[Value] = [Value.Two, Value.Three, Value.Four, Value.Five,
-                                     Value.Six, Value.Seven, Value.Eight, Value.Nine,
-                                     Value.Ten, Value.Jack, Value.Queen, Value.King, Value.As]
-}
+var card1 = Card(color: Color.Diamond, value: Value.Eight);
+var card2 = Card(color: Color.Diamond, value: Value.Nine);
+var card3 = Card(color: Color.Spade, value: Value.Nine);
+var card4 = card2;
 
-enum Color :String {
-    case Clovers = "Clovers"
-    case Tiles = "Tiles"
-    case Hearts = "Hearts"
-    case Pikes = "Pikes"
-    static let allColors :[Color] = [Color.Clovers, Color.Tiles, Color.Hearts, Color.Pikes]
-}
+print("Compare: (\(card1.description)) - (\(card2.description))|");
+print("resut: \(card1.isEqual(card2))\n\n");
 
+print("Compare: (\(card2.description)) - (\(card3.description))");
+print("resut: \(card2.isEqual(card3))\n\n");
 
+print("Compare: (\(card3.description)) - (\(card4.description))");
+print("resut: \(card3.isEqual(card4))\n\n");
 
-func main() {
-    print("test");
-}
+print("Compare: (\(card2.description)) - (\(card4.description))");
+print("resut: \(card2.isEqual(card4))\n\n");
+
+print("Compare: (\(card1.description)) - (\(card4.description))");
+print("resut: \(card1.isEqual(card4))\n\n");
+
+print("Compare: (\(card2.description)) - (\(card2.description))");
+print("resut: \(card2.isEqual(card2))\n\n");

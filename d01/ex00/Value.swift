@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum Value :Int {
-    case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,  Jack, Queen, King, Ace
-    static let allValues :[Value] = [Value.Two, Value.Three, Value.Four, Value.Five,
+public enum Value :Int {
+    case Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,  Jack, Queen, King
+    static let allValues :[Value] = [Value.Ace, Value.Two, Value.Three, Value.Four, Value.Five,
                                      Value.Six, Value.Seven, Value.Eight, Value.Nine,
-                                     Value.Ten, Value.Jack, Value.Queen, Value.King, Value.Ace]
+                                     Value.Ten, Value.Jack, Value.Queen, Value.King]
 }

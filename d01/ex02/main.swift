@@ -9,29 +9,24 @@ import Foundation
 
 print("allSpades");
 for spade in Deck.allSpades {
-    print(spade);
+    print(spade.description);
 }
-print("\n\n");
+print("\n");
 
 
-//
-//print("allDiamonds")
-//print(Deck.allDiamonds);
-//print("\n\n");
-//
-//print("allHearts")
-//print(Deck.allHearts);
-//print("\n\n");
-//
-//print("allHearts")
-//print(Deck.allHearts);
-//print("\n\n");
-//
-//print("allClubs")
-//print(Deck.allClubs);
-//print("\n\n");
-//
-//print("allCards")
-//print(Deck.allCards);
-//print("\n\n");
 
+print("allDiamonds")
+print(Deck.allDiamonds);
+print("\n");
+
+print("allHearts")
+print(Deck.allHearts);
+print("\n");
+
+print("allClubs")
+print(Deck.allClubs);
+print("\n");
+
+print("allCards")
+print(Deck.allCards);
+print("\n");
