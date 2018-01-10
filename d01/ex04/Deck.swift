@@ -41,11 +41,17 @@ class Deck: NSObject {
     }
     
     func fold(c: Card) {
+        var founded = false;
         for card in outs {
             if (card.isEqual(c)){
                 discards.append(c);
                 outs.removeFirst();
+                founded = true;
             }
+        }
+        if (!founded)
+        {
+            print("\(c.description) notfound");
         }
     }
 }

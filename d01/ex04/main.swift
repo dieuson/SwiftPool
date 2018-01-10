@@ -50,9 +50,9 @@ print("outs cards:\n\(deck2.outs)");
 
 print("\n\n");
 print("try to draw 55 cards");
-for i in 0..<55 {
+
+for _ in 0..<55 {
     card = deck2.draw();
-    i += 1;
 }
 print("discard cards:\n\(deck2.discards)");
 print("outs cards:\n\(deck2.outs)");
@@ -62,6 +62,7 @@ print("fold all cards");
 for card in deck2.outs {
     deck2.fold(c: card);
 }
+card = Card(color: Color.Spade, value: Value.Two);
 deck2.fold(c: card!);
 print("discard cards:\n\(deck2.discards)");
 print("outs cards:\n\(deck2.outs)");
