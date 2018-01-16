@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  gallery
+//  d05
 //
-//  Created by Dieuson VIRGILE on 1/12/18.
+//  Created by Dieuson VIRGILE on 1/15/18.
 //  Copyright © 2018 Dieuson VIRGILE. All rights reserved.
 //
 
