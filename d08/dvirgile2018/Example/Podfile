@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'dvirgile2018_Example' do
+  pod 'dvirgile2018', :path => '../'
+
+  target 'dvirgile2018_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
