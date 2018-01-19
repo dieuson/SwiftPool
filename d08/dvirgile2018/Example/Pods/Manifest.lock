@@ -1,0 +1,16 @@
+PODS:
+  - dvirgile2018 (0.1.0)
+
+DEPENDENCIES:
+  - dvirgile2018 (from `../`)
+
+EXTERNAL SOURCES:
+  dvirgile2018:
+    :path: ../
+
+SPEC CHECKSUMS:
+  dvirgile2018: c671448bdb20008f58bbe22d6c5d909cd4fb2a08
+
+PODFILE CHECKSUM: 5d8de6ea8b2d1e7ac623c66892698f3c750bb7b1
+
+COCOAPODS: 1.3.1

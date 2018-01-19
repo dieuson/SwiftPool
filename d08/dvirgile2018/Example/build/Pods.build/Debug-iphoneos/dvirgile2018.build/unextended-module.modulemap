@@ -1,0 +1,10 @@
+framework module dvirgile2018 {
+  umbrella header "dvirgile2018-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module dvirgile2018.__Swift {
+    exclude header "dvirgile2018-Swift.h"
+}
